@@ -1,0 +1,24 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Simple Search Engine (Java)/*
+!/Simple Search Engine (Java)/task/
+/Simple Search Engine (Java)/task/*
+!/Simple Search Engine (Java)/task/src
+
+# Project exclude paths
+/Topics/File class/Are siblings/out/
+/Topics/File class/Are siblings/out/production/classes/
+/Topics/HashMap/The same letter/out/
+/Topics/HashMap/The same letter/out/production/classes/
+/Topics/The List interface/Backward indexes/out/
+/Topics/The List interface/Backward indexes/out/production/classes/

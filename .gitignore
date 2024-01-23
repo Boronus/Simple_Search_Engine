@@ -14,9 +14,10 @@ build
 !/Simple Search Engine (Java)/task/
 /Simple Search Engine (Java)/task/*
 !/Simple Search Engine (Java)/task/src
+!/Simple Search Engine (Java)/task/test
 
 # Project exclude paths
-/Topics/File class/Are siblings/out/
+/Topics/
 /Topics/File class/Are siblings/out/production/classes/
 /Topics/HashMap/The same letter/out/
 /Topics/HashMap/The same letter/out/production/classes/

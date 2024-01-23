@@ -86,7 +86,6 @@ public class Main {
         String[] searchWords = search.split(" ");
 
         strategy.find(searchWords, people, peopleIndex);
-
     }
 
     public static void printAll(ArrayList<String> people) {

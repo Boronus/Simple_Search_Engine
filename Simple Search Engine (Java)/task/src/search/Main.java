@@ -33,7 +33,7 @@ public class Main {
 
             int command = scanner.nextInt();
             scanner.nextLine();
-            Action actionView = null;
+            Action actionView;
 
             try {
                 actionView = Action.values()[command];
@@ -66,14 +66,11 @@ public class Main {
     }
 
     public static FindingStrategy getStrategy(String strategyName) {
-        switch (strategyName) {
-            case "ALL":
-                return new AllStrategy();
-            case "ANY":
-                return new AnyStrategy();
-            default:
-                return new NoneStrategy();
-        }
+        return switch (strategyName) {
+            case "ALL" -> new AllStrategy();
+            case "ANY" -> new AnyStrategy();
+            default -> new NoneStrategy();
+        };
     }
 
     public static void findPerson(Scanner scanner, ArrayList<String> people, HashMap<String, ArrayList<Integer>> peopleIndex) {
@@ -106,8 +103,8 @@ public class Main {
         for (String person : people) {
             String[] splitted = person.split(" ");
 
-            for (int j = 0; j < splitted.length; j++) {
-                String personDataString = splitted[j].toLowerCase();
+            for (String s : splitted) {
+                String personDataString = s.toLowerCase();
 
                 if (peopleIndex.containsKey(personDataString)) {
                     ArrayList<Integer> currentValue = peopleIndex.get(personDataString);

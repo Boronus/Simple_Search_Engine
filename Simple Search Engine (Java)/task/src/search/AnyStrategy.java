@@ -2,7 +2,6 @@ package search;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class AnyStrategy  implements FindingStrategy {
     public void find (String[] searchWords, ArrayList<String> people, HashMap<String, ArrayList<Integer>> peopleIndex) {
